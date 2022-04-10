@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Reto1</string>
+    <string name="login_welcome">Bienvenido a YouTube</string>
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_password">Contraseña</string>
+    <string name="login_loginBtn">Iniciar sesión</string>
+
+    <string name="menuyt_home">Home</string>
+    <string name="menuyt_publicar">Publicar</string>
+    <string name="menuyt_perfil">Perfil</string>
+    <string name="menuyt_toolbar_title">Youtube</string>
+
+    <string name="fragnewpost_gallery">Galeria</string>
+    <string name="fragnewpost_camera">Cámara</string>
+    <string name="fragnewpost_hint_title">Título</string>
+    <string name="fragnewpost_button_publish">Publicar</string>
+
+</resources>

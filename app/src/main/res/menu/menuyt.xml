@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemHome"
+        android:icon="@drawable/round_home_black_24dp"
+        android:title="@string/menuyt_home" />
+    <item
+        android:id="@+id/itemPublish"
+        android:icon="@drawable/round_home_black_24dp2"
+        android:title="@string/menuyt_publicar" />
+    <item
+        android:id="@+id/itemProfile"
+        android:title="@string/menuyt_perfil" />
+</menu>
