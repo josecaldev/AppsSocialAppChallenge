@@ -2,9 +2,10 @@ package com.juanca.reto1.model
 
 import android.media.Image
 import android.widget.ImageView
+import com.google.gson.Gson
 
-class User (email: String, password: String, username: String){
+class User(var username: String, var password: String) {
 
-    private lateinit var image: Image
-
+    var email: String = "$username@gmail.com"
+    lateinit var profileImageUri: String
 }

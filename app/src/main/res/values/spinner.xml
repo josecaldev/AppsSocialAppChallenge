@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities_array">
+        <item>Bogotá</item>
+        <item>Medellín</item>
+        <item>Cali</item>
+        <item>Barranquilla</item>
+        <item>Cartagena</item>
+        <item>Soacha</item>
+        <item>Soledad</item>
+        <item>Cúcuta</item>
+        <item>Bucaramanga</item>
+        <item>Bello</item>
+        <item>Villavicencio</item>
+        <item>Ibagué</item>
+        <item>Santa Marta</item>
+        <item>Valledupar</item>
+        <item>Manizales</item>
+        <item>Pereira</item>
+        <item>Montería</item>
+        <item>Neiva</item>
+        <item>Pasto</item>
+        <item>Armenia</item>
+    </string-array>
+</resources>

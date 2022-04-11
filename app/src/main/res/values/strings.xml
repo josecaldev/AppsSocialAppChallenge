@@ -14,5 +14,14 @@
     <string name="fragnewpost_camera">Cámara</string>
     <string name="fragnewpost_hint_title">Título</string>
     <string name="fragnewpost_button_publish">Publicar</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="profile_signoutBtn">Cerrar sesión</string>
+    <string name="profile_updateBtn">Guardar</string>
 
 </resources>

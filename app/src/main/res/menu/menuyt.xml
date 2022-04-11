@@ -3,13 +3,14 @@
 
     <item
         android:id="@+id/itemHome"
-        android:icon="@drawable/round_home_black_24dp"
+        android:icon="@drawable/round_home_white_24dp"
         android:title="@string/menuyt_home" />
     <item
         android:id="@+id/itemPublish"
-        android:icon="@drawable/round_home_black_24dp2"
+        android:icon="@drawable/round_add_circle_white_24dp"
         android:title="@string/menuyt_publicar" />
     <item
         android:id="@+id/itemProfile"
+        android:icon="@drawable/round_account_circle_white_24dp"
         android:title="@string/menuyt_perfil" />
 </menu>

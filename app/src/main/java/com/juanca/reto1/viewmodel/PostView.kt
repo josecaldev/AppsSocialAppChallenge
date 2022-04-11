@@ -19,9 +19,4 @@ class PostView(itemView: View): RecyclerView.ViewHolder(itemView) {
     var date: TextView = itemView.findViewById(R.id.rowDateTV)
     var location: TextView = itemView.findViewById(R.id.rowLocationTV)
 
-    init {
-
-    }
-
-
 }

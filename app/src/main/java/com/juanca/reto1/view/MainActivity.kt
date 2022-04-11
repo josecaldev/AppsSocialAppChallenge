@@ -1,12 +1,15 @@
 package com.juanca.reto1.view
 
-import android.Manifest
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.gson.Gson
 import com.juanca.reto1.R
 import com.juanca.reto1.databinding.ActivityMainBinding
+import com.juanca.reto1.model.User
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,24 +20,18 @@ class MainActivity : AppCompatActivity() {
     private lateinit var newPostFragment: NewPostFragment
     private lateinit var profileFragment: ProfileFragment
 
+    private var loggedUser = LoginActivity.loggedUser
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        requestPermissions(arrayOf(
-            Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.CAMERA
-        ),11)
-
-
         homeFragment = HomeFragment.newInstance()
         newPostFragment = NewPostFragment.newInstance()
         profileFragment = ProfileFragment.newInstance()
 
-        newPostFragment.listener = homeFragment
-
+        newPostFragment.newPostListener = homeFragment
 
         showFragment(homeFragment)
 
@@ -49,7 +46,6 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-
     }
 
     fun showFragment(fragment: Fragment) {
@@ -57,4 +53,9 @@ class MainActivity : AppCompatActivity() {
         transaction.replace(R.id.fragmentContainer, fragment)
         transaction.commit()
     }
+
+    public fun getNavigator(): BottomNavigationView{
+        return navigator
+    }
+
 }

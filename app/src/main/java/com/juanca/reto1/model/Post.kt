@@ -6,20 +6,24 @@ import java.util.*
 
 class Post {
     var id: String
-    var thumbnail: Image
+    var thumbnailUri: String
     var username: String
-    var userImage: Image
+    //var userImageUri: String
     var title: String
     var date: String
     var location: String
 
-    constructor(id: String, thumbnail: Image, username: String,
-                userImage: Image, title: String,
-                date: String, location: String) {
+    constructor(thumbnailUri: String,
+                username: String,
+                //userImageUri: String,
+                title: String,
+                date: String,
+                location: String) {
+
         this.id = UUID.randomUUID().toString()
         this.username = username
-        this.userImage = userImage
-        this.thumbnail = thumbnail
+        //this.userImageUri = userImageUri
+        this.thumbnailUri = thumbnailUri
         this.title = title
         this.location = location
         this.date = date

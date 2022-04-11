@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.gson.Gson
 import com.juanca.reto1.databinding.FragmentHomeBinding
 import com.juanca.reto1.model.Post
 
@@ -41,6 +42,11 @@ class HomeFragment : Fragment(), NewPostFragment.OnNewPostListener {
         @JvmStatic
         fun newInstance() = HomeFragment()
 
+    }
+
+    override fun onPause() {
+        super.onPause()
+        val json = Gson().toJson()
     }
 
     override fun newPost(post: Post) {
